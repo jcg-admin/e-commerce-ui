@@ -26,7 +26,11 @@ coverage/
 .DS_Store
 
 # Logs
-*.log
+# `*.log` NO se ignora — directiva del ejecutor 2026-09-10. Un log de una
+# corrida es evidencia fechada: el nivel 4 de `niveles-de-retencion.md` es
+# completitud percibida SIN persistencia, y un log ignorado es tan durable como
+# el contenedor. Lo que sigue ignorado es ruido de dependencia o de motor, no
+# rastro de lo que la sesion hizo.
 npm-debug.log*
 
 # Misc
